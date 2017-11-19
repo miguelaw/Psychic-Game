@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My Psychic Game</title>
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Additional Styling -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+        <header>
+        <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Miguel Woroniak - Psychic Game</h2>
+                    </div>
+                </div>
+        </div>	
+        </header>
+
+        <br>
+
+        <div class="container text-center"> 
+            <img src="assets/images/psy.jpg" alt="Psychic's Image" id="psy">
+            
+            <p>
+            <audio autoplay id="Music" controls>
+            <source src="./assets/images/PSYCHIC_MIRRORS.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            </p>
+
+        </div>
+        
+        <br>
+
+        <div class="container">
+                <div class="row">
+                    <div class = "col-md-8">
+                        <div id="leftMain">
+                            <h3>Instructions</h3>
+                            <p>Pick a letter on the keyboard in order to guess which letter I am thinking of.</p>
+                            <div id="results">Press any key to start.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="rightMain">
+                            <h4 class="text-center">Scoreboard</h4>
+        
+                            <table>
+                                <tr>
+                                    
+                                    <td>Wins:</td> <td id="wins">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Losses:</td> <td id="losses">0</td>							
+                                </tr>
+                                <tr>
+                                    <td>Guesses left:</td> <td id="guessesLeft">10</td>							
+                                </tr>
+                                <tr>
+                                    <td>Letter guessed:</td> <td id="computerGuess"></td>							
+                                </tr>
+                                <tr>
+                                    <td>Your guesses so far:</td> <td id="guesses"></td>							
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <footer class = "container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h6>@Copyright 2017 Miguel Woroniak</h6>
+                    </div>
+                </div>
+        </footer>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- External JS File here -->
+  <script src="./assets/javascript/game.js"></script>
+
+</body>
+</html>
